@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.mypro.domain.Movie" alias="Movie" />
+	</typeAliases>
+	<mappers>
+		<package name="com.mypro.dao"/>
+	</mappers>
+</configuration>

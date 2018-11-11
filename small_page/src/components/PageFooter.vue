@@ -1,10 +1,10 @@
 <template>
-  <!--<div class="page-footer">-->
-    <!--<span class="footer-font-size">Copyright © 2018 - 2018 WangXiaoLiang, College of Computer, NanKai University.&nbsp;&nbsp;All Rights Reserved <br>-->
-    <!--版权所有：WangXiaoLiang  &nbsp;&nbsp;  设计制作：王志煜-1611328<br><br>-->
-      <!--Special Thanks To:@孙靖琪-1611318 孙靖琪学长 Providing font-page ideas.-->
-    <!--</span>-->
-  <!--</div>-->
+  <div class="page-footer">
+    <span class="footer-font-size">Copyright © 2018 - 2018 WangXiaoLiang, College of Computer, NanKai University.&nbsp;&nbsp;All Rights Reserved <br>
+    版权所有：WangXiaoLiang  &nbsp;&nbsp;  设计制作：王志煜-1611328<br><br>
+      Special Thanks To:@孙靖琪-1611318 孙靖琪学长 Providing font-page ideas.
+    </span>
+  </div>
 </template>index.vue
 
 <script>

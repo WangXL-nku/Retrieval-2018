@@ -3,12 +3,12 @@
 <template>
 
 <div>
-  <!--<page-header></page-header>-->
+  <page-header></page-header>
 
-  <!--<div class="line"></div>-->
+  <div class="line"></div>
     <router-view id="main"></router-view>
 
-  <!--<page-footer></page-footer>-->
+  <page-footer></page-footer>
 </div>
 
 </template>

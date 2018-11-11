@@ -11,23 +11,17 @@ public interface MovieBiz {
 
     Movie findById(Integer id);
 
+    List<Integer> findByString(String qst,String Line);
+
+    List<Integer> wordToList(String word, String Line);
+
+    List<Movie> findByIdList(List<Integer> idList);
+
     String ListToJson(List<Movie> movies);
 
     List<Integer> boolOption(List<Integer> list1,List<Integer> list2,String option);
 
-    List<Movie> highLight(Integer pageNum);
+    List<Movie> highLight(List<Movie> movies,List<Term> keyWords,String Line);
 
     String highLightStr(String movieStr,String keyWord);
-
-    void getScore(String qst);
-
-    void queryScore(String qst);
-
-    void initScore(String qst);
-
-    Integer swapNode(int head,int father);
-
-    void makeHeap();
-
-    List<Movie> heapSort(int pageNum);
 }

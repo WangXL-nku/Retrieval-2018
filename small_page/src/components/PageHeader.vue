@@ -1,7 +1,7 @@
 <template>
   <div class="page-head">
-    <!--<img class="header-img-style" src="../assets/pageHead1.png" >-->
-    <!--<img class="header-img-style head-img-hight-style" src="../assets/images (4).jpg">-->
+    <img class="header-img-style" src="../assets/pageHead1.png" >
+    <img class="header-img-style head-img-hight-style" src="../assets/images (4).jpg">
 
 <!-- <navigate-bar @logOutChild="logOutChild_"></navigate-bar> -->
   </div>

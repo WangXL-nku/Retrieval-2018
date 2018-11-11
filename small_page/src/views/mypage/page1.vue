@@ -212,10 +212,8 @@
       },
       methods:{
         getAllMovie(){
-          this.axios.get('/tf-idf_search', {
-            params: {
-              question:'他拥有人的心智，却拥有一双剪刀手'
-            },
+          this.axios.get('/datatest', {
+            params: {},
             headers: {
             }
           }).then(res => {

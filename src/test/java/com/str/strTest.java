@@ -19,7 +19,9 @@ public class strTest {
         System.out.println(head.length());
         System.out.println(foot.length());
     }
-    public void test1(){
+
+    @Test
+    public void teststr(){
         String head = "<span style=\"color:#F00;\">";
         String foot = "</span>";
         String string = "我喜欢霸王别姬霸王he霸王以及霸王霸王";
@@ -41,12 +43,5 @@ public class strTest {
         }
 
         System.out.println(sb.toString());
-    }
-
-    @Test
-    public void teststr(){
-        int a=2,b=3;
-        int j=b/a;
-        System.out.println(j);
     }
 }

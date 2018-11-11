@@ -9,7 +9,7 @@ export default new Router({
       path: '/',
       name: '系统首页',
       component: index,
-      redirect:'/new',
+      redirect:'/page',
       children:[
         {
           path:'/page',
@@ -18,13 +18,6 @@ export default new Router({
             requireAuth:true
           },
           component: resolve => require(['@/views/mypage/page1'], resolve)
-        },{
-          path:'/new',
-          name:'new',
-          meta:{
-            requireAuth:true
-          },
-          component:resolve => require(['@/views/mypage/new'], resolve)
         }
       ]
     }

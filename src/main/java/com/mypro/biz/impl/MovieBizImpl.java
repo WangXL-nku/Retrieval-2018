@@ -41,6 +41,11 @@ public class MovieBizImpl implements MovieBiz {
     }
 
     @Override
+    public Integer findTotalNum() {
+        return movieDao.findTotalNum();
+    }
+
+    @Override
     public List<Integer> findByString(String qst,String Line) {
         Result result = ToAnalysis.parse(qst);
         List<Term> terms = result.getTerms();
@@ -196,24 +201,6 @@ public class MovieBizImpl implements MovieBiz {
                         movie.setAbst(highLightStr(movie.getAbst(),keyword));
                     }
                 }
-//                StringBuilder sb = new StringBuilder(realStr);
-//                List<Integer> indexList = new ArrayList<>();
-//                for(int j=0;j<realStr.length();j++){
-//                    Integer index = realStr.indexOf(keyword,i);
-//                    if(index!=-1){
-//                        indexList.add(index);
-//                        i=index;
-//                    }else {
-//                        break;
-//                    }
-//                }
-//                if(indexList.size()>0){
-//                    for (int j=indexList.size()-1;j>=0;j--){
-//                        sb.insert(indexList.get(j)+keyword.length(),foot);
-//                        sb.insert(indexList.get(j),head);
-//                    }
-//                }
-//                realStr = sb.toString();
             }
         }
         return movies;

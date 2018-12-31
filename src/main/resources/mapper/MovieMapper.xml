@@ -6,17 +6,15 @@
 
 <mapper namespace="com.mypro.dao.MovieDao">
 
-    <resultMap id="MovieResultMap" type="com.mypro.domain.Movie" autoMapping="true">
-
-        <!-- 		<id property="id" column="id"/>
-
-                <result property="userName" column="userName"/>
-
-                <result property="userPassword" column="userPassword"/> -->
-
+    <resultMap id="MovieResultMap" type="com.mypro.domain.Movie" autoMapping="true"></resultMap>
+    <resultMap id="ResultOfInteger" type="java.lang.Integer">
+        <result column="count(*)" property="count(*)" jdbcType="INTEGER" />
     </resultMap>
 
-
+    <select id="findTotalNum" resultMap="ResultOfInteger">
+		select count(*)
+		from movie
+	</select>
 
     <select id="findAll" resultMap="MovieResultMap">
 		select *

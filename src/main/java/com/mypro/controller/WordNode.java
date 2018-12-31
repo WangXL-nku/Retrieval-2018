@@ -1,48 +1,43 @@
 package com.mypro.controller;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class WordNode {
-    public String getName() {
-        return name;
+public class WordNode implements Serializable {
+    private Integer termId;
+    private Integer docId;
+
+    public Integer getTermId() {
+        return termId;
+    }
+
+    public WordNode(Integer termId, Integer docId) {
+        this.termId = termId;
+        this.docId = docId;
     }
 
     public WordNode() {
-        this.infoList = new ArrayList<WordTextInfoNode>();
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTermId(Integer termId) {
+        this.termId = termId;
     }
 
-    public WordNode(String name, List<WordTextInfoNode> infoList) {
-        this.name = name;
-        this.infoList = infoList;
+    public Integer getDocId() {
+        return docId;
     }
 
-    public List<WordTextInfoNode> getInfoList() {
-        return infoList;
+    @Override
+    public String toString() {
+        return "WordNode{" +
+                "termId=" + termId +
+                ", docId=" + docId +
+                '}';
     }
 
-    public WordNode(String name) {
-        this.name = name;
-        this.infoList = new ArrayList<WordTextInfoNode>();
+    public void setDocId(Integer docId) {
+        this.docId = docId;
     }
-
-    public void setInfoList(List<WordTextInfoNode> infoList) {
-        this.infoList = infoList;
-    }
-
-    private String name;
-    private List<WordTextInfoNode> infoList;
-
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        WordNode wordo = (WordNode) o;
-        return Objects.equals(name, wordo.name);
-    }
-
 }

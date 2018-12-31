@@ -11,6 +11,8 @@ public interface MovieBiz {
 
     Movie findById(Integer id);
 
+    Integer findTotalNum();
+
     List<Integer> findByString(String qst,String Line);
 
     List<Integer> wordToList(String word, String Line);
